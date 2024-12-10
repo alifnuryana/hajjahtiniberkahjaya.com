@@ -3,6 +3,12 @@ export default defineNuxtConfig({
   modules: ['@nuxt/eslint'],
   devtools: { enabled: true },
 
+  runtimeConfig: {
+    public: {
+      appUrl: '',
+    },
+  },
+
   future: {
     compatibilityVersion: 4,
   },
