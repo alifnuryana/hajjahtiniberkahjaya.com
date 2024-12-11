@@ -8,14 +8,31 @@ const { onLoaded } = useScriptNpm({
   },
 })
 
+interface ScrollCueOptions {
+  interval: number
+  duration: number
+  percentage: number
+}
+
+interface ScrollCueApi {
+  init: (options: ScrollCueOptions) => void
+  update: () => void
+}
+
+declare global {
+  interface Window {
+    scrollCue: ScrollCueApi
+  }
+}
+
 onLoaded(() => {
-  scrollCue.init({
+  window.scrollCue.init({
     interval: -400,
     duration: 700,
     percentage: 0.8,
   })
 
-  scrollCue.update()
+  window.scrollCue.update()
 })
 </script>
 
