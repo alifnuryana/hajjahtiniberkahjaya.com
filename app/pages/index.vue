@@ -1,11 +1,14 @@
 <script setup lang="ts">
-useHead({
-  title: 'Beranda',
+const title = ref('Under Construction')
+
+useSeoMeta({
+  title: title,
 })
 </script>
 
 <template>
-  <div>
-    <h1>Under Construction</h1>
+  <div class="container">
+    <h1>{{ title }}</h1>
+    <p>This page is under construction.</p>
   </div>
 </template>
