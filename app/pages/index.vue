@@ -1,11 +1,11 @@
 <script setup lang="ts">
-useHead({
-  title: 'Beranda',
+const title = ref('Under Construction')
+
+useSeoMeta({
+  title: title,
 })
 </script>
 
 <template>
-  <div>
-    <h1>Under Construction</h1>
-  </div>
+  <SectionHero />
 </template>
