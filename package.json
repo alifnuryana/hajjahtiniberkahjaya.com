@@ -13,16 +13,27 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "nuxt": "^3.14.1592",
+    "@nuxtjs/seo": "2.0.2",
     "vue": "latest",
     "vue-router": "latest"
   },
   "devDependencies": {
     "@nuxt/eslint": "^0.7.2",
+    "@nuxt/image": "1.8.1",
+    "@popperjs/core": "^2.11.8",
+    "@types/bootstrap": "^5.2.10",
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.3.3",
     "eslint": "^9.16.0",
-    "typescript": "^5.7.2",
+    "glightbox": "^3.3.0",
     "husky": "^8.0.0",
-    "lint-staged": "^15.2.10"
+    "lint-staged": "^15.2.10",
+    "nuxt": "^3.14.1592",
+    "plyr": "^3.7.8",
+    "sass-embedded": "^1.82.0",
+    "scrollcue": "^2.0.0",
+    "swiper": "^11.1.15",
+    "typescript": "^5.7.2"
   },
   "lint-staged": {
     "*.{ts,vue}": [
