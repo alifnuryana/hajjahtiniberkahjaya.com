@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxt/eslint', '@nuxtjs/seo', '@nuxt/image'],
+  modules: ['@nuxt/eslint', '@nuxtjs/seo', '@nuxt/image', '@nuxt/scripts'],
   devtools: { enabled: true },
 
   css: ['~/assets/scss/plugins.scss', '~/assets/scss/style.scss', '~/assets/scss/colors/yellow.scss', '~/assets/scss/fonts/thicccboi.scss'],
