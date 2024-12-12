@@ -9,7 +9,7 @@ overrides:
 
 patchedDependencies:
   scrollcue@2.0.0:
-    hash: ggnucmsm6ltzhkwjl6cxra76dy
+    hash: v52doiu7kczmtjqeg3nt5mcahm
     path: patches/scrollcue@2.0.0.patch
   typer-dot-js@0.1.0:
     hash: 33nlpa5mrio6g4ihycsvdcx7ca
@@ -82,7 +82,7 @@ importers:
         version: 1.82.0
       scrollcue:
         specifier: ~2.0
-        version: 2.0.0(patch_hash=ggnucmsm6ltzhkwjl6cxra76dy)
+        version: 2.0.0(patch_hash=v52doiu7kczmtjqeg3nt5mcahm)
       swiper:
         specifier: ^11.1.15
         version: 11.1.15
@@ -10489,7 +10489,7 @@ snapshots:
       ajv: 6.12.6
       ajv-keywords: 3.5.2(ajv@6.12.6)
 
-  scrollcue@2.0.0(patch_hash=ggnucmsm6ltzhkwjl6cxra76dy): {}
+  scrollcue@2.0.0(patch_hash=v52doiu7kczmtjqeg3nt5mcahm): {}
 
   scslre@0.3.0:
     dependencies:
