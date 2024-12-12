@@ -1,9 +1,10 @@
 <script setup lang="ts">
+const { $bootstrap } = useNuxtApp()
 const navOffCanvasRef = useTemplateRef('nav-off-canvas-ref')
 const bsOffCanvas = computed(() => {
   if (!navOffCanvasRef.value?.navOffCanvasRef) return
 
-  return new window.bootstrap.Offcanvas(navOffCanvasRef.value.navOffCanvasRef, {
+  return new $bootstrap.Offcanvas(navOffCanvasRef.value.navOffCanvasRef, {
     scroll: false,
   })
 })

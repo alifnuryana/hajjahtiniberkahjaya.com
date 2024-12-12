@@ -1,38 +1,50 @@
 <script setup lang="ts">
-const { onLoaded } = useScriptNpm({
-  packageName: 'scrollcue',
-  version: '2.0.0',
-  file: 'scrollCue.min.js',
-  scriptOptions: {
-    bundle: true,
-  },
-})
+// const { onLoaded } = useScriptNpm({
+//   packageName: 'scrollcue',
+//   version: '2.0.0',
+//   file: 'scrollCue.min.js',
+//   scriptOptions: {
+//     bundle: true,
+//   },
+// })
+//
+// interface ScrollCueOptions {
+//   interval: number
+//   duration: number
+//   percentage: number
+// }
+//
+// interface ScrollCueApi {
+//   init: (options: ScrollCueOptions) => void
+//   update: () => void
+// }
+//
+// declare global {
+//   interface Window {
+//     scrollCue: ScrollCueApi
+//   }
+// }
+//
+// onLoaded(() => {
+//   window.scrollCue.init({
+//     interval: -400,
+//     duration: 700,
+//     percentage: 0.8,
+//   })
+//
+//   window.scrollCue.update()
+// })
 
-interface ScrollCueOptions {
-  interval: number
-  duration: number
-  percentage: number
-}
+onMounted(async () => {
+  const scrollCue = (await import('scrollcue')).default
 
-interface ScrollCueApi {
-  init: (options: ScrollCueOptions) => void
-  update: () => void
-}
-
-declare global {
-  interface Window {
-    scrollCue: ScrollCueApi
-  }
-}
-
-onLoaded(() => {
-  window.scrollCue.init({
+  scrollCue.init({
     interval: -400,
     duration: 700,
     percentage: 0.8,
   })
 
-  window.scrollCue.update()
+  scrollCue.update()
 })
 
 const { hero } = useAppConfig()

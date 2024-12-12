@@ -1,5 +1,9 @@
 <script setup lang="ts">
 const { hero } = useAppConfig()
+
+onMounted(async () => {
+  await import('typer-dot-js')
+})
 </script>
 
 <template>
