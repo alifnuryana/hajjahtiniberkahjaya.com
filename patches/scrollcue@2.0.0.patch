@@ -1,0 +1,26 @@
+diff --git a/package.json b/package.json
+index 59aef8aec7785a2a733912e64382225595173916..3fe748ced80b461ffcddc37fa4ca12daa9f9ec23 100644
+--- a/package.json
++++ b/package.json
+@@ -7,7 +7,7 @@
+     "fadein",
+     "scroll"
+   ],
+-  "main": "scrollCue.min.js",
++  "main": "scrollCue.js",
+   "files": [
+     "README.md",
+     "LICENSE",
+diff --git a/scrollCue.js b/scrollCue.js
+index 52a91bb3aea06c5c254c2c0783583a7962e98ae3..1f9bca29f3c5b5ae0455ddc5da407a9276d48af5 100644
+--- a/scrollCue.js
++++ b/scrollCue.js
+@@ -9,7 +9,7 @@
+ 
+  -----------------------**/
+ 
+-const scrollCue = (function () {
++export default scrollCue = (function () {
+ 
+     let $f = {}, $e, $q;
+     let resizeTimer = 0, scrollEnable = true, enable = true, ds = false, pcr = false;
