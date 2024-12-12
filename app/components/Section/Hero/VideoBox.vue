@@ -3,13 +3,7 @@ const { hero } = useAppConfig()
 
 onMounted(async () => {
   const Plyr = (await import('plyr')).default
-
-  Plyr.setup('.player', {
-    loadSprite: true,
-    fullscreen: { enabled: true, iosNative: true },
-    muted: false,
-  })
-
+  window.Plyr = Plyr
   const GLightbox = (await import('glightbox')).default
 
   GLightbox({
@@ -45,6 +39,12 @@ onMounted(async () => {
         },
       },
     },
+  })
+
+  Plyr.setup('.player', {
+    loadSprite: true,
+    fullscreen: { enabled: true, iosNative: true },
+    muted: false,
   })
 })
 </script>
