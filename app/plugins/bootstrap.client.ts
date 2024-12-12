@@ -2,8 +2,7 @@ import * as bootstrap from 'bootstrap'
 
 export default defineNuxtPlugin({
   name: 'bootstrap',
-  setup(nuxtApp) {
-    nuxtApp.provide('bootstrap', bootstrap)
+  setup(_nuxtApp) {
     window.bootstrap = bootstrap
   },
 })
