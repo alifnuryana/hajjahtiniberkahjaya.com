@@ -34,6 +34,8 @@ onLoaded(() => {
 
   window.scrollCue.update()
 })
+
+const { hero } = useAppConfig()
 </script>
 
 <template>
@@ -50,7 +52,7 @@ onLoaded(() => {
           <SectionHeroSubHeadline />
           <div>
             <NuxtLink class="btn btn-lg btn-primary rounded">
-              Pelajari Lebih Lanjut
+              {{ hero.ctaText }}
             </NuxtLink>
           </div>
         </div>

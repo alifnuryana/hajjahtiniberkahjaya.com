@@ -1,3 +1,7 @@
+<script setup lang="ts">
+const { hero } = useAppConfig()
+</script>
+
 <template>
   <div
     class="col-lg-5 offset-lg-1 mb-n18"
@@ -5,7 +9,7 @@
   >
     <div class="position-relative">
       <a
-        href="/media/movie.mp4"
+        :href="hero.videoUrl"
         class="btn btn-circle btn-primary btn-play ripple mx-auto mb-6 position-absolute"
         style="top:50%; left: 50%; transform: translate(-50%,-50%); z-index:3;"
         data-glightbox
@@ -14,8 +18,8 @@
       </a>
       <figure class="rounded shadow-lg">
         <NuxtImg
-          src="/images/about13.jpg"
-          alt=""
+          :src="hero.videoPosterImageUrl"
+          alt="Produk akhir (pakan ternak) yang berkualitas"
         />
       </figure>
     </div>

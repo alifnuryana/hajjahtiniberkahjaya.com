@@ -1,9 +1,13 @@
+<script setup lang="ts">
+const { hero } = useAppConfig()
+</script>
+
 <template>
   <h1 class="display-1 text-white mb-4">
-    Sandbox focuses on <br><span
+    {{ hero.headline }} <span
       class="typer text-primary text-nowrap"
       data-delay="100"
-      data-words="customer satisfaction,business needs,creative ideas"
+      :data-words="hero.typerHeadline.join(',')"
     /><span
       class="cursor text-primary"
       data-owner="typer"
