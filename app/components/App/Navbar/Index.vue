@@ -27,7 +27,6 @@ onMounted(() => {
       },
       onStick: function () {
         const navbarClonedClass = this.clonedElem.classList
-        console.log(this.clonedElem)
         if (navbarClonedClass.contains('transparent') && navbarClonedClass.contains('navbar-dark')) {
           this.clonedElem.className = this.clonedElem.className.replace('navbar-dark', 'navbar-light')
         }
