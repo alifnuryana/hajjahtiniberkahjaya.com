@@ -8,7 +8,8 @@ onMounted(async () => {
 
 <template>
   <h1 class="display-1 text-white mb-4">
-    {{ hero.headline }} <span
+    {{ hero.headline }} <br>
+    <span
       class="typer text-primary text-nowrap"
       data-delay="100"
       :data-words="hero.typerHeadline.join(',')"
