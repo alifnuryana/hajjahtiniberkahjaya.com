@@ -8,9 +8,6 @@ overrides:
   '@jridgewell/gen-mapping': 0.3.5
 
 patchedDependencies:
-  scrollcue@2.0.0:
-    hash: v52doiu7kczmtjqeg3nt5mcahm
-    path: patches/scrollcue@2.0.0.patch
   typer-dot-js@0.1.0:
     hash: 33nlpa5mrio6g4ihycsvdcx7ca
     path: patches/typer-dot-js@0.1.0.patch
@@ -80,9 +77,6 @@ importers:
       sass-embedded:
         specifier: ^1.82.0
         version: 1.82.0
-      scrollcue:
-        specifier: ~2.0
-        version: 2.0.0(patch_hash=v52doiu7kczmtjqeg3nt5mcahm)
       swiper:
         specifier: ^11.1.15
         version: 11.1.15
@@ -4381,9 +4375,6 @@ packages:
   schema-utils@3.3.0:
     resolution: {integrity: sha512-pN/yOAvcC+5rQ5nERGuwrjLlYvLTbCibnZ1I7B1LaiAz9BRBlE9GMgE/eqV30P7aJQUf7Ddimy/RsbYO/GrVGg==}
     engines: {node: '>= 10.13.0'}
-
-  scrollcue@2.0.0:
-    resolution: {integrity: sha512-uGLYpFK0c1i48v/95Q/fC9GCEdYHYasIDrEBMPXRRtIlznDEOD9nl+BgjwSQaU8uGS6E88Pp3HWb+CUkUKocRQ==}
 
   scslre@0.3.0:
     resolution: {integrity: sha512-3A6sD0WYP7+QrjbfNA2FN3FsOaGGFoekCVgTyypy53gPxhbkCIjtO6YWgdrfM+n/8sI8JeXZOIxsHjMTNxQ4nQ==}
@@ -10488,8 +10479,6 @@ snapshots:
       '@types/json-schema': 7.0.15
       ajv: 6.12.6
       ajv-keywords: 3.5.2(ajv@6.12.6)
-
-  scrollcue@2.0.0(patch_hash=v52doiu7kczmtjqeg3nt5mcahm): {}
 
   scslre@0.3.0:
     dependencies:

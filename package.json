@@ -35,7 +35,6 @@
     "nuxt": "^3.14.1592",
     "plyr": "~3.7",
     "sass-embedded": "^1.82.0",
-    "scrollcue": "~2.0",
     "swiper": "^11.1.15",
     "typer-dot-js": "^0.1.0",
     "typescript": "^5.7.2"
@@ -51,8 +50,7 @@
   "packageManager": "pnpm@9.14.4",
   "pnpm": {
     "patchedDependencies": {
-      "typer-dot-js@0.1.0": "patches/typer-dot-js@0.1.0.patch",
-      "scrollcue@2.0.0": "patches/scrollcue@2.0.0.patch"
+      "typer-dot-js@0.1.0": "patches/typer-dot-js@0.1.0.patch"
     }
   }
 }
