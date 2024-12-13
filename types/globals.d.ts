@@ -1,7 +1,6 @@
 declare module 'typer-dot-js'
 
 declare module 'glightbox' {
-
   interface GLightboxOptions {
     selector?: string
     elements?: HTMLElement[]
@@ -81,9 +80,8 @@ declare module 'glightbox' {
 
     prevSlide(): void
 
-    on(event: string, callback: (...args: any[]) => void): void
-
-    off(event: string, callback?: (...args: any[]) => void): void
+    // on(event: string, callback: (...args: any[]) => void): void
+    // off(event: string, callback?: (...args: any[]) => void): void
   }
 
   /**
@@ -94,4 +92,10 @@ declare module 'glightbox' {
   function GLightbox(options?: GLightboxOptions): GLightbox
 
   export default GLightbox
+}
+
+interface Window {
+  Headhesive: {
+    new(element: HTMLElement | string, options: HeadhesiveOptions): Headhesive
+  }
 }
