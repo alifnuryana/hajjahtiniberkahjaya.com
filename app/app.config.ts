@@ -20,8 +20,8 @@ export default defineAppConfig({
     { label: 'Kontak', to: '/' },
   ],
   hero: {
-    headline: 'Ubah Limbah Makanan Jadi',
-    typerHeadline: ['Pakan Ternak Berkualitas', 'Keuntungan Bisnis', 'Keseimbangan Lingkungan'],
+    headline: 'PT Hajjah Tini Berkah Jaya Berfokus pada',
+    typerHeadline: ['Pakan Ternak', 'Limbah Makanan', 'Keseimbangan Lingkungan'],
     subHeadline: 'PT. Hajjah Tini Berkah Jaya hadir sebagai solusi cerdas untuk mengelola limbah makanan Anda. Dapatkan pakan ternak berkualitas dan kurangi dampak lingkungan.',
     ctaText: 'Konsultasikan Sekarang',
     videoPosterImageUrl: '/images/about13.jpg',

@@ -98,4 +98,5 @@ interface Window {
   Headhesive: {
     new(element: HTMLElement | string, options: HeadhesiveOptions): Headhesive
   }
+  scrollCue: ScrollCue
 }

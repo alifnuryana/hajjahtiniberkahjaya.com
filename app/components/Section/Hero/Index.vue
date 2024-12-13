@@ -1,17 +1,18 @@
 <script setup lang="ts">
-onMounted(async () => {
-  const scrollCue = (await import('scrollcue')).default
-
-  scrollCue.init({
-    interval: -400,
-    duration: 700,
-    percentage: 0.8,
-  })
-
-  scrollCue.update()
-})
-
 const { hero } = useAppConfig()
+
+const { onLoaded } = useScrollCue()
+onMounted(() => {
+  onLoaded(({ scrollCue }) => {
+    scrollCue.init({
+      interval: -400,
+      duration: 700,
+      percentage: 0.8,
+    })
+
+    scrollCue.update()
+  })
+})
 </script>
 
 <template>
