@@ -20,6 +20,7 @@
   "devDependencies": {
     "@nuxt/eslint": "^0.7.2",
     "@nuxt/image": "1.8.1",
+    "@nuxt/rspack-builder": "^3.14.1592",
     "@nuxt/scripts": "0.9.5",
     "@popperjs/core": "^2.11.8",
     "@types/bootstrap": "^5.2.10",
