@@ -11,7 +11,6 @@ export default defineNuxtConfig({
     },
   },
 
-  builder: 'rspack',
   future: {
     compatibilityVersion: 4,
   },
