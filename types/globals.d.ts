@@ -1,5 +1,5 @@
 declare module 'typer-dot-js'
-
+declare module 'scrollcue'
 declare module 'glightbox' {
   interface GLightboxOptions {
     selector?: string
