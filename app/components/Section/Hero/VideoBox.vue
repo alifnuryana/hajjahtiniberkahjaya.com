@@ -1,50 +1,52 @@
 <script setup lang="ts">
 const { hero } = useAppConfig()
 
+const { onLoaded: onLoadedPlyr } = usePlyr()
+const { onLoaded: onLoadedGlightBox } = useGlightbox()
 onMounted(async () => {
-  const Plyr = (await import('plyr')).default
-  window.Plyr = Plyr
-  const GLightbox = (await import('glightbox')).default
-
-  GLightbox({
-    selector: '*[data-glightbox]',
-    touchNavigation: true,
-    loop: false,
-    zoomable: false,
-    autoplayVideos: true,
-    moreLength: 0,
-    slideExtraAttributes: {
-      poster: '',
-    },
-    plyr: {
-      css: '',
-      js: '',
-      config: {
-        ratio: '',
-        fullscreen: {
-          enabled: false,
-          iosNative: false,
-        },
-        youtube: {
-          noCookie: true,
-          rel: 0,
-          showinfo: 0,
-          iv_load_policy: 3,
-        },
-        vimeo: {
-          byline: false,
-          portrait: false,
-          title: false,
-          transparent: false,
+  onLoadedGlightBox(({ GLightbox }) => {
+    GLightbox({
+      selector: '*[data-glightbox]',
+      touchNavigation: true,
+      loop: false,
+      zoomable: false,
+      autoplayVideos: true,
+      moreLength: 0,
+      slideExtraAttributes: {
+        poster: '',
+      },
+      plyr: {
+        css: '',
+        js: '',
+        config: {
+          ratio: '',
+          fullscreen: {
+            enabled: false,
+            iosNative: false,
+          },
+          youtube: {
+            noCookie: true,
+            rel: 0,
+            showinfo: 0,
+            iv_load_policy: 3,
+          },
+          vimeo: {
+            byline: false,
+            portrait: false,
+            title: false,
+            transparent: false,
+          },
         },
       },
-    },
+    })
   })
 
-  Plyr.setup('.player', {
-    loadSprite: true,
-    fullscreen: { enabled: true, iosNative: true },
-    muted: false,
+  onLoadedPlyr(({ Plyr }) => {
+    Plyr.setup('.player', {
+      loadSprite: true,
+      fullscreen: { enabled: true, iosNative: true },
+      muted: false,
+    })
   })
 })
 </script>
