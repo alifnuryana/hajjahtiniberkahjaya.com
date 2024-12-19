@@ -1,0 +1,22 @@
+diff --git a/typer.js b/typer.js
+index 40784344e14a400888e949d0499fd698e86de9aa..be3f2980080eebfa187310896d90e695cd116299 100644
+--- a/typer.js
++++ b/typer.js
+@@ -77,7 +77,7 @@ Typer.prototype.doTyping = function() {
+ 
+ var Cursor = function(element) {
+   this.element = element;
+-  this.cursorDisplay = element.dataset.cursordisplay || element.dataset.cursorDisplay || "_";
++  this.cursorDisplay = element.dataset.cursordisplay || element.dataset.cursorDisplay || "|";
+   element.innerHTML = this.cursorDisplay;
+   this.on = true;
+   element.style.transition = "all 0.1s";
+@@ -109,7 +109,7 @@ function TyperSetup() {
+   for (let e of document.getElementsByClassName("cursor")) {
+     let t = new Cursor(e);
+     t.owner = typers[e.dataset.owner];
+-    t.owner.cursor = t;
++    // t.owner.cursor = t;
+   }
+ }
+ 
