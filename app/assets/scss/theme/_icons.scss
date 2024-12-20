@@ -238,22 +238,6 @@ $value in $icon-solid-fill {
 //----------------------------------------------------------//
 //	FONT ICONS
 //----------------------------------------------------------//
-@font-face {
-  font-family: 'Unicons';
-  src: url('../fonts/unicons/Unicons.woff2') format('woff2'),
-    url('../fonts/unicons/Unicons.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-@font-face {
-  font-family: "Custom";
-  src: url('../fonts/custom/Custom.woff2') format('woff2'),
-    url('../fonts/custom/Custom.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
 [class^="uil-"],
 [class*=" uil-"],
 [class^="icn-"],

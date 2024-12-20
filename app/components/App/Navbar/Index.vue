@@ -30,6 +30,13 @@ onMounted(() => {
         if (navbarClonedClass.contains('transparent') && navbarClonedClass.contains('navbar-dark')) {
           this.clonedElem.className = this.clonedElem.className.replace('navbar-dark', 'navbar-light')
         }
+
+        const clonedHamburger = this.clonedElem.querySelector('.hamburger')
+        clonedHamburger?.addEventListener('click', showOffCanvas)
+      },
+      onUnstick: function () {
+        const clonedHamburger = this.clonedElem.querySelector('.hamburger')
+        clonedHamburger?.removeEventListener('click', showOffCanvas)
       },
     })
   })
