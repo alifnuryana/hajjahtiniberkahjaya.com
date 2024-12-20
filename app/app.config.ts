@@ -20,11 +20,37 @@ export default defineAppConfig({
     { label: 'Kontak', to: '/' },
   ],
   hero: {
-    headline: 'PT Hajjah Tini Berkah Jaya Berfokus pada',
-    typerHeadline: ['Pakan Ternak', 'Limbah Makanan', 'Keseimbangan Lingkungan'],
-    subHeadline: 'PT. Hajjah Tini Berkah Jaya hadir sebagai solusi cerdas untuk mengelola limbah makanan Anda. Dapatkan pakan ternak berkualitas dan kurangi dampak lingkungan.',
-    ctaText: 'Konsultasikan Sekarang',
+    headline: 'Solusi Terbaik untuk',
+    typerHeadline: ['Industri Ransum Makanan Hewan.', 'Konsentrat Makanan Hewan.', 'Perdagangan Minyak dan Lemak Nabati.', 'Perdagangan Berbagai Macam Barang.'],
+    subHeadline: 'Mitra terpercaya yang memberikan produk berkualitas tinggi dan layanan unggul untuk mendukung kebutuhan bisnis Anda.',
+    ctaText: 'Hubungi Kami Sekarang',
     videoPosterImageUrl: '/images/about13.jpg',
     videoUrl: '/media/movie.mp4',
+  },
+  service: {
+    headline: 'Layanan Kami',
+    subHeadline: 'Kami menyediakan berbagai layanan unggulan untuk mendukung kebutuhan industri dan perdagangan Anda.',
+    services: [
+      {
+        icon: 'uil-constructor',
+        title: 'Industri Ransum Makanan Hewan',
+        description: 'Produksi ransum berkualitas tinggi untuk memenuhi kebutuhan nutrisi hewan ternak dan peliharaan Anda.',
+      },
+      {
+        icon: 'uil-processor',
+        title: 'Industri Konsentrat Makanan Hewan',
+        description: 'Penyediaan konsentrat dengan formula khusus untuk meningkatkan produktivitas dan kesehatan hewan Anda.',
+      },
+      {
+        icon: 'uil-water-glass',
+        title: 'Perdagangan Minyak dan Lemak Nabati',
+        description: 'Distribusi minyak dan lemak nabati berkualitas tinggi untuk mendukung berbagai kebutuhan industri.',
+      },
+      {
+        icon: 'uil-box',
+        title: 'Perdagangan Berbagai Macam Barang',
+        description: 'Solusi lengkap untuk memenuhi kebutuhan barang berkualitas tinggi bagi bisnis Anda.',
+      },
+    ],
   },
 })

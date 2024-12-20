@@ -1,3 +1,9 @@
+<script setup lang="ts">
+defineProps<{
+  title: string
+}>()
+</script>
+
 <template>
-  <h4>24/7 Support</h4>
+  <h4>{{ title }}</h4>
 </template>

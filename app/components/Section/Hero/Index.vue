@@ -25,7 +25,9 @@ onMounted(() => {
           data-group="page-title"
           data-delay="600"
         >
-          <SectionHeroHeadline />
+          <ClientOnly>
+            <SectionHeroHeadline />
+          </ClientOnly>
           <SectionHeroSubHeadline />
           <div>
             <NuxtLink class="btn btn-lg btn-primary rounded">

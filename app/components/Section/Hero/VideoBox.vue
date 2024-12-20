@@ -68,7 +68,7 @@ onMounted(async () => {
       <figure class="rounded shadow-lg">
         <NuxtImg
           :src="hero.videoPosterImageUrl"
-          alt="Produk akhir (pakan ternak) yang berkualitas"
+          alt="Kenali PT Hajjah Tini Berkah Jaya dan Solusi yang Kami Tawarkan"
         />
       </figure>
     </div>
